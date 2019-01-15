@@ -1,0 +1,35 @@
+<div class="container marketing">
+  <ul>
+  <li *ngFor="let reed of reedsList.reverse()">
+   
+  <div class="feed-container">
+      
+      <div class="feed-border clearfix">
+        <div class="feed-body clearfix">
+         
+          <div class="feed-content">
+              <div class="username"><h2><em>Occupation: {{ reed.job }}</em></h2></div>
+              <hr>
+            
+            <h3 style="text-align:left;">Favorite Food: {{ reed.favFood }}</h3>
+            <p>
+              
+              <br>
+              <em>Is He Cool?: {{ reed.isCool }}</em>
+            </p>
+            <button class="btn btn-danger" (click)="deleteReed(reed)"style="float:right;bottom:0;">
+              <i class="fa fa-trash"></i>
+          </button>
+                
+        </div>
+      
+        <div class="feed-footer clearfix">
+            
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  </li>
+  </ul>
+  </div>

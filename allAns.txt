@@ -1,0 +1,104 @@
+1. List 10 Linux/Unix Commands and tell me what each of them do
+    -chmod u+x filename.sh - allows you to edit and run your script
+    -./filename.sh runs script
+    -whoami - shows current user on computer
+    -date - shows current date
+    -echo $PATH - shows list of your directories that lead to where you are
+    -ls - lists all files/directories in current location
+    -cd .. - takes you back one directory
+    -cd directoryNameHere - takes you into that directory
+    -touch fileName.txt - creates a file to match whatever the extension is (e.g. .txt being a text file) 
+    -mkdir directoryName - creates directory
+    -pwsh - launches PowerShell
+    -rm fileName - removes file
+
+
+
+2. List 5 Common GitHub Commands and explain what they do to a 5th grader
+
+    -git init
+        initializes an empty git repo for the current directory
+    -git pull origin master
+        pulls version of project currently labeled as origin master
+    -git add .
+        adds files to be commited
+    -git commit -m "commit message"
+        finalizes the commits along with the message of what is contains in those changes being commited
+    -git checkout branchname
+        checks if you have an exsiting branch called branchname and if you do it switches to it if you don't it creates it
+
+
+
+3. What are the different file permissions associated with Scripts?
+
+    Read, Write, and Execute.
+
+
+4. How would you run multiple commands in the Powershell terminal?
+
+    Insert a semicolon between commands
+
+
+
+5. How would you run multiple Linux commands at one time?
+
+    && or ;
+
+6. What is the difference between PowerShell and Shell Scripting?
+    ~ Is there a reason we would use one over the other?
+
+    They utilize different kernels, powershell can pipe objects as opposed to shell scripting pipes unsctructured text.
+
+7. Give me some examples when you should not use scripting.
+
+    intricate web apps
+
+8. What is Version Control and how is Git and GitHub involved?
+
+    version control is implemented to ensure your code stays up to date and can be pulled from/updated (hopefully) smoothly.
+    Git is basically the tool and git hub is the service that allows repositories to be made and maintained.
+
+
+9. What are the different roles that a team member could play in the GitHub flow?
+
+    Initializing
+    pushing
+    pulling
+    Merging
+    Committing
+    Branching
+
+
+10. How do you handle Merge Conflict?
+    ~ What is the best way to avoid them?
+
+    Find the conflicts in the file typically by typing git status in the terminal or looking around for the <<<<<<<, =======, >>>>>>>. To resolve this simply decide what you would like the file to look like, delete the <<<<<<<, =======, >>>>>>>, and procede to git add . and git commit -m "message"
+    To avoid merge conflicts assign specific tasks to all devs in your group, Make sure no one touches the same file and stay up to date on the latest push made by pulling frequently!
+
+12. Explain to a 14 year old what Branching in a GitHub Repo is and why it is useful in the workflow.
+    
+    Branching allows you to take the project that you currently have a basically clone it so that you can make changes to that project without worrying about ruining the entire project!
+
+
+13. When should you work on a branch versus working on the master repo?
+    
+    Use branches for testing new implementations and solidifying them. Only push them to the master when they have been checked by another dev and are functioning all around.
+    NEVER work directly on the master.
+
+
+14. Describe the 2 of the 4 parts of a MEAN Stack Application, what do they all do and how do they all work together?
+
+    M - Mongodb - the database. this is where you can persist data!
+    E - Express - used for building out the backend of a web app. Typically to make an API to communicate the data from front end to mongo!
+    A - Angular - The swanky front end. Typically has all of it's components displayed in one overarching app component to allow smooth navigation through html.
+    N - Node - The package manager(npm), also tells express how to handle backend Javascript. 
+
+
+
+15. Which framework, associated with a MEAN stack application, could be switched out for a different framework?
+    ~ How would that change what the application could do?
+    ~ How would that change environment configuration?
+
+    You could switch Angular out for React, making it a MERN stack.
+    React is very similar to angular (still breaks html up into components) so it wouldn't change the interaction with Mongo, Node, or Express, however it utilizes JSX I believe as opposed to Angular's TypeScript. So it would be able to function the same way a MEAN stack would.
+
